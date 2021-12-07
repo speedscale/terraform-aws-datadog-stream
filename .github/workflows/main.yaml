@@ -2,9 +2,9 @@ name: Terraform
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches: [ main ]
   pull_request:
-    branches: [ $default-branch ]
+    branches: [ main ]
 
 jobs:
   validate:
@@ -12,5 +12,8 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v2
+
     - name: terraform-validate
       uses: dflook/terraform-validate@v1.4.1
+      with:
+        path: ./

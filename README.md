@@ -1,3 +1,4 @@
+[![Terraform](https://github.com/speedscale/terraform-aws-datadog-stream/actions/workflows/main.yaml/badge.svg)](https://github.com/speedscale/terraform-aws-datadog-stream/actions/workflows/main.yaml)
 # terraform-aws-datadog-stream
 This Terraform module sets up the AWS to Datadog integration using metric streams as described [here](https://docs.datadoghq.com/integrations/guide/aws-cloudwatch-metric-streams-with-kinesis-data-firehose/).
 
